@@ -35,9 +35,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-      SEMGREP_REPO_DISPLAY_NAME: gsecops/ktor-samples2
+      SEMGREP_REPO_DISPLAY_NAME: gsecops/ktor-samples0
     container:
-      image: semgrep/semgrep:1.128.0
+      image: semgrep/semgrep:1.125.0
     steps:
       - uses: actions/checkout@v4
       #- name: Download artifact from the previous job
